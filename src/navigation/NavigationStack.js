@@ -34,6 +34,8 @@ function App() {
             name="Login"
             component={Login}
             options={{
+              // When logging out, a pop animation feels intuitive
+              // You can remove this if you want the default 'push' animation
               animationTypeForReplace: isLoggedIn ? 'push' : 'pop',
             }}
           />
